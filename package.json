@@ -1,0 +1,86 @@
+{
+  "name": "s3rver",
+  "version": "3.7.1",
+  "description": "Fake S3 server for node",
+  "keywords": [
+    "fake",
+    "s3",
+    "server",
+    "mock",
+    "false",
+    "amazon"
+  ],
+  "author": {
+    "name": "Jamie Hall",
+    "email": "hello@jamiehall.eu",
+    "url": "http://github.com/jamhall/s3rver"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jamhall/s3rver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jamhall/s3rver/issues"
+  },
+  "homepage": "https://github.com/jamhall/s3rver",
+  "scripts": {
+    "test": "mocha",
+    "eslint": "eslint --ignore-path .gitignore \"**/*.js\"",
+    "prettier-check": "prettier-check --ignore-path .gitignore \"**/*.{js,md}\"",
+    "format": "eslint --fix --ignore-path .gitignore \"**/*.js\" && prettier --ignore-path .gitignore --write \"**/*.{js,md}\""
+  },
+  "main": "lib/s3rver.js",
+  "files": [
+    "bin/**/*",
+    "lib/**/*",
+    "example/*.xml"
+  ],
+  "bin": {
+    "s3rver": "bin/s3rver.js"
+  },
+  "directories": {
+    "lib": "./lib",
+    "example": "./example",
+    "test": "./test"
+  },
+  "engines": {
+    "node": ">=8.3.0"
+  },
+  "dependencies": {
+    "@koa/router": "^9.0.0",
+    "busboy": "^0.3.1",
+    "commander": "^5.0.0",
+    "fast-xml-parser": "^3.12.19",
+    "fs-extra": "^8.0.0",
+    "he": "^1.2.0",
+    "koa": "^2.7.0",
+    "koa-logger": "^3.2.0",
+    "lodash": "^4.17.5",
+    "statuses": "^2.0.0",
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {
+    "aws-sdk": "2.686.0",
+    "chai": "4.2.0",
+    "chai-as-promised": "7.1.1",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-config-semistandard": "15.0.0",
+    "eslint-config-standard": "14.1.1",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.0.1",
+    "express": "4.17.1",
+    "form-data": "3.0.0",
+    "md5": "2.2.1",
+    "mocha": "7.2.0",
+    "moment": "2.26.0",
+    "p-map": "3.0.0",
+    "prettier": "1.19.1",
+    "prettier-check": "2.0.0",
+    "request": "2.88.2",
+    "request-promise-native": "1.0.8"
+  }
+}
