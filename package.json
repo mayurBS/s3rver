@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "@koa/router": "^9.0.0",
+    "axios": "^1.6.8",
     "busboy": "^0.3.1",
     "commander": "^5.0.0",
     "fast-xml-parser": "^3.12.19",
@@ -57,6 +58,7 @@
     "koa": "^2.7.0",
     "koa-logger": "^3.2.0",
     "lodash": "^4.17.5",
+    "mongodb": "^6.5.0",
     "statuses": "^2.0.0",
     "winston": "^3.0.0"
   },
